@@ -51,8 +51,11 @@ export const Logo = styled(Repost)`
 export const MenuButton = styled.button`
   cursor: pointer;
   border-radius: 25px;
-  padding: 8.25px 0;
+  padding: 8.25px 10px;
   outline: 0;
+  margin-top: 30px;
+  width: 100%;
+  text-align: left;
 
   &:hover {
     background: ${({ theme }) => theme.twitterDarkHover};
