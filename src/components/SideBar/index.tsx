@@ -1,5 +1,9 @@
+/* eslint-disable react/jsx-key */
 import FollowSuggestion from '../FollowSuggestion';
 import List from '../List';
+import News from '../News';
+import StickyBox from 'react-sticky-box';
+
 import {
   Body,
   Container,
@@ -16,16 +20,22 @@ export default function SideBar() {
         <SearchIcon />
       </SearchWrapper>
 
-      <Body>
-        <List
-          title="Talvez você curta"
-          elements={[
-            <FollowSuggestion name="John Doe" handle="@johndoe" key="user1" />,
-            <FollowSuggestion name="Jone Doe" handle="@jonedoe" key="user2" />,
-            <FollowSuggestion name="Jene Doe" handle="@jenedoe" key="user3" />,
-          ]}
-        />
-      </Body>
+      <StickyBox>
+        <Body>
+          <List
+            title="Talvez você curta"
+            elements={[
+              <FollowSuggestion name="John Doe" handle="@johndoe" />,
+              <FollowSuggestion name="Jone Doe" handle="@jonedoe" />,
+              <FollowSuggestion name="Jene Doe" handle="@jenedoe" />,
+            ]}
+          />
+          <List
+            title="O que está acontecendo"
+            elements={[<News />, <News />, <News />]}
+          />
+        </Body>
+      </StickyBox>
     </Container>
   );
 }
