@@ -10,3 +10,4 @@ export {
 export { Person, Cake, Favorite } from 'styled-icons/material';
 export { ArrowLeft } from 'styled-icons/heroicons-solid';
 export { ChatBubbleBottomCenter as Chat } from 'styled-icons/heroicons-outline';
+export { Repost } from 'styled-icons/boxicons-regular';

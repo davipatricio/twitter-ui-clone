@@ -1,3 +1,4 @@
+import Feed from '../Feed';
 import {
   Container,
   Banner,
@@ -44,6 +45,8 @@ export default function ProfilePage() {
           </span>
         </Followage>
       </ProfileData>
+
+      <Feed />
     </Container>
   );
 }
